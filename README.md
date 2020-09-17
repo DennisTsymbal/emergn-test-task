@@ -1,1 +1,0 @@
-# emergn-test-task
