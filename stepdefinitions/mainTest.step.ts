@@ -47,9 +47,8 @@ export class TstingSteps {
   }
 }
 
-function clean(obj: {
-  [x: string]: any;
-}, target: string) {
+function clean(obj: {[x: string]: any;},target: string)
+{
   var tmpobj = obj;
   for (var key in tmpobj) {
     if (key === target) {
