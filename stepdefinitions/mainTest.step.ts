@@ -6,7 +6,7 @@ import util from 'util';
 //const { Binding, Given, When, Then } = require("cucumber");
 
 @binding()
-export class TstingSteps {
+export class TestingSteps {
   public website: string = 'https://www.github.com/';
   public cookie1: string = '';
   public cookie2: string = '';
@@ -20,7 +20,7 @@ export class TstingSteps {
     this.cookie3 = 'thirdCookieKey=thirdCookieValue';
   }
 
-  @when(/^A set of three cookies$/)
+  @when(/^Three Cookies are set up$/)
   public GetCookies() {
     let cookieJar = new CookieJar();
     const setCookie = util.promisify(cookieJar.setCookie.bind(cookieJar));
